@@ -1,10 +1,12 @@
 const express = require('express') 
 const router = express.Router()
-const khra = require('../models/aq')
+
 const mongoose = require('mongoose')
+const khra = require('../models/aq')
 
 
-router.get('/',async(req,res)  => {
+
+router.get('/bd',async(req,res)  => {
     try{
         const bd = await khra.find()
         res.json(bd)
