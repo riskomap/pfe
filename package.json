@@ -4,7 +4,8 @@
   "description": "package:\r npm init\r npm install express\r npm instal mongodb\r npm install mongoose\r npm install nodemon --save-dev\r npm install -g nodemon --save-dev\r ---open package.json : script: 'start':'nodemon  app.js'\r -creat file: app.js\r -start mongod\r nodemon run start",
   "main": "web.js",
   "scripts": {
-    "start": "node web.js"
+    "start": "node web.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
